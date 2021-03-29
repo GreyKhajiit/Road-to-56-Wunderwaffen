@@ -9955,7 +9955,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_ireland_friend
-		icon = GFX_goal_tripartite_pact
+		icon = GFX_goal_IRE_plan_w
 		prerequisite = { focus = ENG_western }
 		mutually_exclusive = { focus = ENG_demand_ireland }
 		available = { 
