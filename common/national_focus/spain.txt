@@ -10059,7 +10059,15 @@ focus_tree = {
 		completion_reward = {
 			add_stability = -0.1
 			add_political_power = 120
-			SOV = { add_opinion_modifier = { target = ROOT modifier = SPR_the_stalinist_doctrine } }
+			if = {
+				limit = {
+					SOV = {
+						has_government = communism
+					}
+				}
+				SOV = { add_opinion_modifier = { target = ROOT modifier = SPR_the_stalinist_doctrine } }
+			}
+			
 			custom_effect_tooltip = available_military_high_command
 			show_ideas_tooltip = SPR_wilhelm_zaisser
 			if = {
@@ -10852,6 +10860,14 @@ focus_tree = {
 					is_ai = yes
 				}
 			}
+			modifier = {
+				factor = 0
+				SOV = {
+					NOT = {
+						has_government = communism
+					}
+				}
+			}			
 			modifier = {
 				factor = 0
 				surrender_progress < 0.4
