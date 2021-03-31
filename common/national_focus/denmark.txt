@@ -46,7 +46,7 @@ focus_tree = {
 		cost = 10
 		text = SWE_unite_scandinavia
 		available = {	
-			any_state = {
+			all_state = {
 				
 				OR = {
 					is_core_of = SWE

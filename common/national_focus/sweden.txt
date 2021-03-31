@@ -1793,7 +1793,7 @@ focus = {
 		cost = 10
 		
 		available = {	
-			any_state = {
+			all_state = {
 				
 				OR = {
 					is_core_of = SWE
